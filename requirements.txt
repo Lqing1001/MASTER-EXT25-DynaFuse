@@ -1,0 +1,5 @@
+numpy>=1.26
+pandas>=2.0
+openpyxl>=3.1
+xgboost>=2.0
+# Install torch separately for the CUDA version on the training host.
