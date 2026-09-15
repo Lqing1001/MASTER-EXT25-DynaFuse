@@ -1,13 +1,5 @@
 # MASTER-EXT25-DynaFuse
 
-This is the curated code package for the final DynaFuse manuscript. It contains only:
-
-1. MASTER-EXT25 data construction, strict training-only normalization, and integrity-validation tools.
-2. The MASTER anchor, continuous expert, temporal-attention residual, Top-1 sparse residual, daily z-score fusion, evaluation, and final statistical controls.
-3. The minimum official MASTER source files required by the pipeline.
-
-It intentionally excludes exploratory model screens, discarded architectures, temporary queues, paper-rewriting scripts, caches, checkpoints, generated results, raw data, and research notes. The original project files are unchanged.
-
 ## Layout
 
 - scripts/: data construction and validation toolkit.
@@ -45,7 +37,3 @@ CSI 800:
 The queues train MASTER, the continuous expert and the Top-1 sparse residual, then evaluate the fixed fusion:
 
     0.5 * Z_t(MASTER) + 0.5 * Z_t(continuous_sparse_expert)
-
-## Scope note
-
-Two retained files contain the historical word ablation in their names because the final locked pipeline imports their model classes directly. Unrelated exploratory scripts from the original experiment directory are not included.
