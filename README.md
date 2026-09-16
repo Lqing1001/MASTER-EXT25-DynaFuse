@@ -1,6 +1,6 @@
 # MASTER-EXT25 and DynaFuse
 
-Code for **MASTER-EXT25 and DynaFuse: A Point-in-Time Benchmark and Heterogeneous Expert Fusion for Cross-Sectional Stock Ranking**. This release matches the manuscript dated September 16, 2026 and uses matched full training budgets for every universe and seed.
+Code for **MASTER-EXT25 and DynaFuse: A Point-in-Time Benchmark and Heterogeneous Expert Fusion for Cross-Sectional Stock Ranking**.
 
 [Data preparation](docs/DATA.md) · [Reproduction commands](docs/REPRODUCIBILITY.md) · [Verification](docs/VERIFICATION.md)
 
