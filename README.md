@@ -2,7 +2,7 @@
 
 Code for **MASTER-EXT25 and DynaFuse: A Point-in-Time Benchmark and Heterogeneous Expert Fusion for Cross-Sectional Stock Ranking**. This release matches the manuscript dated September 16, 2026 and uses matched full training budgets for every universe and seed.
 
-[中文说明](README_zh.md) · [Data preparation](docs/DATA.md) · [Reproduction commands](docs/REPRODUCIBILITY.md) · [Verification](docs/VERIFICATION.md)
+[Data preparation](docs/DATA.md) · [Reproduction commands](docs/REPRODUCIBILITY.md) · [Verification](docs/VERIFICATION.md)
 
 DynaFuse combines a market-guided MASTER expert with an independently trained continuous expert: a continuous cross-sectional encoder, mixture ranker, temporal-attention residual and Top-1 sparse temporal residual. Each expert's scores are standardized over the complete daily universe and combined with fixed weights of 0.5/0.5.
 
