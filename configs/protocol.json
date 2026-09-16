@@ -1,0 +1,54 @@
+{
+  "dataset": "MASTER-EXT25",
+  "normalization_fit": [
+    20100104,
+    20191224
+  ],
+  "training": [
+    20100104,
+    20191224
+  ],
+  "validation": [
+    20200102,
+    20211224
+  ],
+  "test": [
+    20220104,
+    20251231
+  ],
+  "universes": [
+    "csi300",
+    "csi800"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "history": 8,
+  "stock_features": 158,
+  "market_features": 63,
+  "label": "adjusted_close[t+5]/adjusted_close[t+1]-1",
+  "MASTER": {
+    "width": 256,
+    "epochs": 40,
+    "patience": 40,
+    "optimizer": "Adam",
+    "lr": 1e-05
+  },
+  "continuous": {
+    "encoder_epochs": 4,
+    "ranker_epochs": 12,
+    "TA_epochs": 10,
+    "SP_epochs": 10,
+    "ranker_TA_patience": 12,
+    "SP_patience": 10,
+    "optimizer": "AdamW",
+    "lr": 0.0001,
+    "weight_decay": 0.0001,
+    "top_k": 1
+  },
+  "checkpoint_criterion": "mean of validation IC and RankIC",
+  "fusion_alpha": 0.5,
+  "fusion_alignment": "complete per-day cross section before filtering missing targets"
+}

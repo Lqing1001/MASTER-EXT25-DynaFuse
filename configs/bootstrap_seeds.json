@@ -1,0 +1,14 @@
+{
+  "csi300": {
+    "DynaFuse_minus_MASTER:IC": 184133692,
+    "DynaFuse_minus_MASTER:RankIC": 2994575817,
+    "DynaFuse_minus_HOM:IC": 2649280655,
+    "DynaFuse_minus_HOM:RankIC": 1511841315
+  },
+  "csi800": {
+    "DynaFuse_minus_MASTER:IC": 600471128,
+    "DynaFuse_minus_MASTER:RankIC": 1536142994,
+    "DynaFuse_minus_HOM:IC": 3463087630,
+    "DynaFuse_minus_HOM:RankIC": 907122425
+  }
+}
