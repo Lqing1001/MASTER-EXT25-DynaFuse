@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this research code, please cite the accompanying manuscript."
+type: software
+title: "MASTER-EXT25 and DynaFuse"
+version: 1.0.0
+license: MIT
+authors:
+  - family-names: Liu
+    given-names: Qingqing
+  - family-names: Rao
+    given-names: Hong
+  - family-names: Dong
+    given-names: Xiaorui
+repository-code: "https://github.com/Lqing1001/MASTER-EXT25-DynaFuse"
+preferred-citation:
+  type: unpublished
+  title: "MASTER-EXT25 and DynaFuse: A Point-in-Time Benchmark and Heterogeneous Expert Fusion for Cross-Sectional Stock Ranking"
+  authors:
+    - family-names: Liu
+      given-names: Qingqing
+    - family-names: Rao
+      given-names: Hong
+    - family-names: Dong
+      given-names: Xiaorui
+  year: 2026
