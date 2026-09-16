@@ -1,0 +1,21 @@
+{
+  "scope": "Matrix multiply-accumulate FLOPs, 2 per MAC. Excludes elementwise ops, bias adds, normalization, activation, softmax, sorting/TopK, score alignment and fusion. Includes GRU/linear/attention matrix products. Registered parameter counts include inactive checkpoint modules.",
+  "parameters": {
+    "MASTER": 775041,
+    "continuous": 402280
+  },
+  "counts": [
+    {
+      "N": 300,
+      "MASTER": 4419975600,
+      "continuous": 970521600,
+      "DynaFuse_HOM_ratio": 0.6097881173823675
+    },
+    {
+      "N": 800,
+      "MASTER": 15063401600,
+      "continuous": 2792857600,
+      "DynaFuse_HOM_ratio": 0.5927034170024386
+    }
+  ]
+}

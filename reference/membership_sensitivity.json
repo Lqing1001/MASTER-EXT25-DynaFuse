@@ -1,0 +1,36 @@
+{
+  "all_period_mismatched_pairs": 4814,
+  "test_excluded": 890,
+  "finite_target_test_excluded": 866,
+  "score_alignment": "full daily cross-section before exclusion",
+  "models": {
+    "MASTER": {
+      "before": {
+        "IC": 0.06196908827645446,
+        "RankIC": 0.07035725633577876,
+        "ICIR": 0.37601596789848324,
+        "RankICIR": 0.4098508940280093
+      },
+      "after": {
+        "IC": 0.0619707664985282,
+        "RankIC": 0.07046755897156538,
+        "ICIR": 0.37517492971806027,
+        "RankICIR": 0.4098285389261129
+      }
+    },
+    "DynaFuse": {
+      "before": {
+        "IC": 0.06528827177075505,
+        "RankIC": 0.07447249365453777,
+        "ICIR": 0.40536610551410057,
+        "RankICIR": 0.44799372097240564
+      },
+      "after": {
+        "IC": 0.06534419181457429,
+        "RankIC": 0.07457609321061258,
+        "ICIR": 0.4046035498016161,
+        "RankICIR": 0.44741991148141397
+      }
+    }
+  }
+}

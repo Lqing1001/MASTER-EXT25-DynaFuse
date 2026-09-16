@@ -1,0 +1,159 @@
+{
+  "syntax_files": 31,
+  "parity": [
+    {
+      "model": "MASTER_csi300",
+      "parameters": 775041,
+      "initialization_forward_gradient": "bitwise_equal"
+    },
+    {
+      "model": "MASTER_csi800",
+      "parameters": 775041,
+      "initialization_forward_gradient": "bitwise_equal"
+    },
+    {
+      "model": "encoder",
+      "parameters": 237087,
+      "initialization_forward_gradient": "bitwise_equal"
+    },
+    {
+      "model": "ranker",
+      "parameters": 347619,
+      "initialization_forward_gradient": "bitwise_equal"
+    },
+    {
+      "model": "TA",
+      "parameters": 384997,
+      "initialization_forward_gradient": "bitwise_equal"
+    },
+    {
+      "model": "SP_top1",
+      "parameters": 402280,
+      "initialization_forward_gradient": "bitwise_equal"
+    }
+  ],
+  "checkpoint_predictions": [
+    {
+      "universe": "csi300",
+      "seed": 0,
+      "model": "MASTER",
+      "date": 20220104,
+      "max_abs_error": 0.0
+    },
+    {
+      "universe": "csi300",
+      "seed": 0,
+      "model": "continuous",
+      "date": 20220104,
+      "max_abs_error": 0.0
+    },
+    {
+      "universe": "csi300",
+      "seed": 1,
+      "model": "MASTER",
+      "date": 20220104,
+      "max_abs_error": 0.0
+    },
+    {
+      "universe": "csi300",
+      "seed": 1,
+      "model": "continuous",
+      "date": 20220104,
+      "max_abs_error": 0.0
+    },
+    {
+      "universe": "csi300",
+      "seed": 2,
+      "model": "MASTER",
+      "date": 20220104,
+      "max_abs_error": 0.0
+    },
+    {
+      "universe": "csi300",
+      "seed": 2,
+      "model": "continuous",
+      "date": 20220104,
+      "max_abs_error": 0.0
+    },
+    {
+      "universe": "csi800",
+      "seed": 0,
+      "model": "MASTER",
+      "date": 20220104,
+      "max_abs_error": 0.0
+    },
+    {
+      "universe": "csi800",
+      "seed": 0,
+      "model": "continuous",
+      "date": 20220104,
+      "max_abs_error": 0.0
+    },
+    {
+      "universe": "csi800",
+      "seed": 1,
+      "model": "MASTER",
+      "date": 20220104,
+      "max_abs_error": 0.0
+    },
+    {
+      "universe": "csi800",
+      "seed": 1,
+      "model": "continuous",
+      "date": 20220104,
+      "max_abs_error": 0.0
+    },
+    {
+      "universe": "csi800",
+      "seed": 2,
+      "model": "MASTER",
+      "date": 20220104,
+      "max_abs_error": 0.0
+    },
+    {
+      "universe": "csi800",
+      "seed": 2,
+      "model": "continuous",
+      "date": 20220104,
+      "max_abs_error": 0.0
+    }
+  ],
+  "statistics": "all means, standard deviations, NW tests, bootstrap intervals and correlations exactly equal",
+  "synthetic_tests": "4 passed",
+  "data_functions_AST_equal": [
+    "compute_alpha158",
+    "load_adjusted_symbol",
+    "extract_quotes",
+    "extract_factors",
+    "extract_index_daily",
+    "import_csi300_membership",
+    "import_csi800_daily_weights",
+    "fit_stats",
+    "fit_market",
+    "package_universe"
+  ],
+  "scope": "Original-vs-release initialization/forward/gradient checks; actual checkpoints on 20220104; full saved-prediction statistics. Full raw-data rebuilding and complete retraining were not repeated.",
+  "CLI_help_checks": [
+    "baselines.neural",
+    "baselines.traditional",
+    "baselines.xgboost",
+    "data_tools.build_master_ext_clean_v1",
+    "data_tools.rebuild_strict_train_only_packages",
+    "data_tools.reconstruct_csi300_history",
+    "data_tools.validate_csi300_csi800_snapshots",
+    "data_tools.validate_csi300_reconstruction_outputs",
+    "data_tools.validate_master_ext_semantics",
+    "dynafuse.comparison_tables",
+    "dynafuse.evaluate",
+    "dynafuse.infer",
+    "dynafuse.membership_sensitivity",
+    "dynafuse.model_cost",
+    "dynafuse.selection_frequency",
+    "dynafuse.sensitivity",
+    "dynafuse.train",
+    "dynafuse.train_continuous",
+    "dynafuse.train_master",
+    "dynafuse.train_sparse"
+  ],
+  "serial_pipeline_commands": 34
+}

@@ -1,0 +1,394 @@
+{
+  "material_passport": {
+    "dataset": "MASTER-EXT-strict-20191224-v1",
+    "source_manifest_sha256": "e2cdaf8587a305a7aaeb3dbcd833d8dd017f9f219ff3423984b0c447a810c3f8",
+    "mode": "single-process single-threaded",
+    "normalization": "separate strictly training-only RobustZScoreNorm per stock universe",
+    "fit_range": [
+      "2010-01-04",
+      "2019-12-24"
+    ],
+    "validation": [
+      "2020-01-02",
+      "2021-12-24"
+    ],
+    "test": [
+      "2022-01-04",
+      "2025-12-31"
+    ],
+    "feature_shape": "158 Alpha158 + 63 market = 221"
+  },
+  "market63": {
+    "training_days": 2426,
+    "features": 63,
+    "fit_date_min": 20100104,
+    "fit_date_max": 20191224,
+    "validation_days_used": 0
+  },
+  "stats": {
+    "csi300": {
+      "training_rows": 727800,
+      "features": 158,
+      "fit_date_min": 20100104,
+      "fit_date_max": 20191224,
+      "validation_rows_used": 0
+    },
+    "csi800": {
+      "training_rows": 1940800,
+      "features": 158,
+      "fit_date_min": 20100104,
+      "fit_date_max": 20191224,
+      "validation_rows_used": 0
+    }
+  },
+  "packages": {
+    "csi300": {
+      "universe": "csi300",
+      "mask": "is_csi300",
+      "years": {
+        "2010": {
+          "rows": 72600,
+          "shape": [
+            72600,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 69377,
+          "ordered": true
+        },
+        "2011": {
+          "rows": 73200,
+          "shape": [
+            73200,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 70202,
+          "ordered": true
+        },
+        "2012": {
+          "rows": 72900,
+          "shape": [
+            72900,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 71010,
+          "ordered": true
+        },
+        "2013": {
+          "rows": 71400,
+          "shape": [
+            71400,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 69367,
+          "ordered": true
+        },
+        "2014": {
+          "rows": 73500,
+          "shape": [
+            73500,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 70440,
+          "ordered": true
+        },
+        "2015": {
+          "rows": 73200,
+          "shape": [
+            73200,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 67295,
+          "ordered": true
+        },
+        "2016": {
+          "rows": 73200,
+          "shape": [
+            73200,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 69536,
+          "ordered": true
+        },
+        "2017": {
+          "rows": 73200,
+          "shape": [
+            73200,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 68921,
+          "ordered": true
+        },
+        "2018": {
+          "rows": 72900,
+          "shape": [
+            72900,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 70173,
+          "ordered": true
+        },
+        "2019": {
+          "rows": 73200,
+          "shape": [
+            73200,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 72894,
+          "ordered": true
+        },
+        "2020": {
+          "rows": 72900,
+          "shape": [
+            72900,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 72717,
+          "ordered": true
+        },
+        "2021": {
+          "rows": 72900,
+          "shape": [
+            72900,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 72769,
+          "ordered": true
+        },
+        "2022": {
+          "rows": 72600,
+          "shape": [
+            72600,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 72522,
+          "ordered": true
+        },
+        "2023": {
+          "rows": 72600,
+          "shape": [
+            72600,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 72592,
+          "ordered": true
+        },
+        "2024": {
+          "rows": 72600,
+          "shape": [
+            72600,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 72481,
+          "ordered": true
+        },
+        "2025": {
+          "rows": 72900,
+          "shape": [
+            72900,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 71183,
+          "ordered": true
+        }
+      },
+      "rows": 1165800,
+      "status": "PASS"
+    },
+    "csi800": {
+      "universe": "csi800",
+      "mask": "is_csi800",
+      "years": {
+        "2010": {
+          "rows": 193600,
+          "shape": [
+            193600,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 185342,
+          "ordered": true
+        },
+        "2011": {
+          "rows": 195200,
+          "shape": [
+            195200,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 186194,
+          "ordered": true
+        },
+        "2012": {
+          "rows": 194400,
+          "shape": [
+            194400,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 187947,
+          "ordered": true
+        },
+        "2013": {
+          "rows": 190400,
+          "shape": [
+            190400,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 184925,
+          "ordered": true
+        },
+        "2014": {
+          "rows": 196000,
+          "shape": [
+            196000,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 185672,
+          "ordered": true
+        },
+        "2015": {
+          "rows": 195200,
+          "shape": [
+            195200,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 172967,
+          "ordered": true
+        },
+        "2016": {
+          "rows": 195200,
+          "shape": [
+            195200,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 183128,
+          "ordered": true
+        },
+        "2017": {
+          "rows": 195200,
+          "shape": [
+            195200,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 183475,
+          "ordered": true
+        },
+        "2018": {
+          "rows": 194400,
+          "shape": [
+            194400,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 185263,
+          "ordered": true
+        },
+        "2019": {
+          "rows": 195200,
+          "shape": [
+            195200,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 194550,
+          "ordered": true
+        },
+        "2020": {
+          "rows": 194400,
+          "shape": [
+            194400,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 193845,
+          "ordered": true
+        },
+        "2021": {
+          "rows": 194400,
+          "shape": [
+            194400,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 193981,
+          "ordered": true
+        },
+        "2022": {
+          "rows": 193600,
+          "shape": [
+            193600,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 193238,
+          "ordered": true
+        },
+        "2023": {
+          "rows": 193600,
+          "shape": [
+            193600,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 193438,
+          "ordered": true
+        },
+        "2024": {
+          "rows": 193600,
+          "shape": [
+            193600,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 193375,
+          "ordered": true
+        },
+        "2025": {
+          "rows": 194355,
+          "shape": [
+            194355,
+            221
+          ],
+          "finite_features": true,
+          "finite_labels": 189986,
+          "ordered": true
+        }
+      },
+      "rows": 3108755,
+      "status": "PASS"
+    }
+  },
+  "temporal_audit": {
+    "training_feature_cutoff": 20191224,
+    "validation_start": 20200102,
+    "alpha158_fit_max": {
+      "csi300": 20191224,
+      "csi800": 20191224
+    },
+    "market63_fit_max": 20191224,
+    "validation_feature_overlap": false,
+    "labels_used_for_normalization": false
+  },
+  "status": "PASS"
+}
